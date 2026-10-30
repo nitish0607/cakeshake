@@ -28,7 +28,7 @@ export class App {
  
 
 openWhatsApp() {
-   WHATSAPP_NUMBER = '917753035353';
+   var WHATSAPP_NUMBER = '917753035353';
   window.open(
     `https://wa.me/${this.WHATSAPP_NUMBER}`,
     '_blank'
