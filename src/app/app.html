@@ -1,0 +1,392 @@
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+   <a class="navbar-brand brand" href="#home">
+  <span class="cake-icon">🎂</span>
+  Cake <span class="brand-highlight">Shake Wala</span>
+  <span class="heart">♡</span>
+</a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cakes">Our Cakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-cake" href="#cakes">Order Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="eyebrow">Freshly baked with love</span>
+
+        <h1>
+          A Little Slice of <em>Happiness</em>
+        </h1>
+
+        <p>
+          Delicious cakes at affordable prices.
+          Make birthdays, anniversaries and every
+          special moment sweeter with Cake Shake.
+        </p>
+
+        <a href="#cakes" class="btn btn-cake btn-lg">
+          Explore Cakes
+        </a>
+
+        <a href="https://wa.me/917753035353"
+           class="btn btn-outline-cake btn-lg"
+           target="_blank" rel="noopener">
+          <i class="bi bi-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+
+      <div class="col-lg-6">
+        <img
+          class="hero-img"
+          src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80"
+          alt="Chocolate celebration cake">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cakes Section -->
+<section class="section-padding" id="cakes">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-label">Our Menu</span>
+      <h2>Choose Your Favourite Cake</h2>
+      <p>Beautiful cakes at pocket-friendly prices.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Cake 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="cake-card">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+            alt="Chocolate truffle cake">
+
+          <div class="card-body">
+            <span class="badge-sale">Bestseller</span>
+            <h3>Chocolate Truffle</h3>
+            <p>Rich chocolate with creamy ganache.</p>
+
+            <div class="price">₹399 <del>₹499</del></div>
+
+            
+
+<button class="btn btn-cake w-100 mt-3"
+  (click)="orderCake('Chocolate Truffle', 399, 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80')">
+  <i class="bi bi-whatsapp"></i> Order on WhatsApp
+</button>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Cake 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="cake-card">
+          <img
+            src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=700&q=80"
+            alt="Strawberry cake">
+
+          <div class="card-body">
+            <span class="badge-sale">Popular</span>
+            <h3>Strawberry Cream</h3>
+            <p>Soft sponge with strawberry cream.</p>
+
+            <div class="price">₹449 <del>₹549</del></div>
+<button class="btn btn-cake w-100 mt-3"
+  (click)="orderCake('Strawberry Cream', 449, 'https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=700&q=80')">
+  <i class="bi bi-whatsapp"></i> Order on WhatsApp
+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cake 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="cake-card">
+          <img
+            src="https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=700&q=80"
+            alt="Red velvet cake">
+
+          <div class="card-body">
+            <span class="badge-sale">Special</span>
+            <h3>Red Velvet</h3>
+            <p>Velvety sponge with smooth cream.</p>
+
+            <div class="price">₹499 <del>₹599</del></div>
+
+            <button class="btn btn-cake w-100 mt-3"
+  (click)="orderCake('Red Velvet', 499, 'https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=700&q=80')">
+  <i class="bi bi-whatsapp"></i> Order on WhatsApp
+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cake 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="cake-card">
+          <img
+            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"
+            alt="Fresh fruit cake">
+
+          <div class="card-body">
+            <h3>Fresh Fruit Cake</h3>
+            <p>Vanilla sponge with fresh fruit.</p>
+            <div class="price">₹449</div>
+
+            <button class="btn btn-cake w-100 mt-3"
+  (click)="orderCake('Fresh Fruit Cake', 449, 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80')">
+  <i class="bi bi-whatsapp"></i> Order on WhatsApp
+</button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Cake 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="cake-card">
+          <img
+            src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=700&q=80"
+            alt="Vanilla cake">
+
+          <div class="card-body">
+            <h3>Vanilla Delight</h3>
+            <p>Classic vanilla with whipped cream.</p>
+            <div class="price">₹349</div>
+
+<button class="btn btn-cake w-100 mt-3"
+  (click)="orderCake('Vanilla Delight', 349, 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=700&q=80')">
+  <i class="bi bi-whatsapp"></i> Order on WhatsApp
+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cake 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="cake-card">
+          <img
+            src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=700&q=80"
+            alt="Cupcakes">
+
+          <div class="card-body">
+            <h3>Cupcake Box</h3>
+            <p>Soft cupcakes with creamy frosting.</p>
+            <div class="price">₹199</div>
+
+<button class="btn btn-cake w-100 mt-3"
+  (click)="orderCake('Cupcake Box', 199, 'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=700&q=80')">
+  <i class="bi bi-whatsapp"></i> Order on WhatsApp
+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="small text-center text-secondary mt-4">
+      Prices are sample starting prices and may vary by size and design.
+    </p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about section-padding" id="about">
+  <div class="container text-center">
+    <span class="section-label">Why Cake Shake?</span>
+    <h2>Sweetness Within Your Budget</h2>
+
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <div class="feature-card">
+          <i class="bi bi-cake2"></i>
+          <h4>Fresh Cakes</h4>
+          <p>Beautiful cakes made for your special moments.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <i class="bi bi-wallet2"></i>
+          <h4>Affordable Prices</h4>
+          <p>Delicious choices to suit different budgets.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <i class="bi bi-whatsapp"></i>
+          <h4>Easy Ordering</h4>
+          <p>Order directly through WhatsApp in a few taps.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section-padding" id="contact">
+  <div class="container text-center contact-box">
+    <h2>Let's Make Your Day Sweeter!</h2>
+    <p>Choose your cake and message us to confirm your order.</p>
+
+    <a href="https://wa.me/"
+       target="_blank" rel="noopener"
+       class="btn btn-cake btn-lg">
+      <i class="bi bi-whatsapp" (click)="orderCake"></i> Chat on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!--Cake Formation-->
+
+<section class="cake-making-section py-5">
+  <div class="container text-center">
+    <span class="section-tag">MADE WITH LOVE</span>
+    <h2 class="display-5 fw-bold mt-2">
+      How Our <span class="pink-text">Cakes</span> Are Made
+    </h2>
+    <p class="text-muted mb-5">
+      From fresh ingredients to a delicious masterpiece!
+    </p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Step 1 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="making-card">
+          <div class="animation-area">
+            <div class="bowl">🥣</div>
+            <div class="ingredient ingredient-one">🥚</div>
+            <div class="ingredient ingredient-two">🥛</div>
+            <div class="ingredient ingredient-three">🌾</div>
+            <div class="mixing-spoon">🥄</div>
+          </div>
+          <span class="step-number">01</span>
+          <h4>Fresh Ingredients</h4>
+          <p>We mix fresh eggs, flour, milk and sugar with love.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="making-card">
+          <div class="animation-area oven-area">
+            <div class="oven">▰
+              <div class="oven-window">
+                <div class="oven-cake"></div>
+              </div>
+            </div>
+            <div class="heat heat-one">♨</div>
+            <div class="heat heat-two">♨</div>
+          </div>
+          <span class="step-number">02</span>
+          <h4>Perfect Baking</h4>
+          <p>Our cake batter bakes until it becomes soft and fluffy.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="making-card">
+          <div class="animation-area">
+            <div class="cream-cake">
+              <div class="cream-top"></div>
+              <div class="cream-layer"></div>
+              <div class="cream-bottom"></div>
+              <div class="cream-drop drop-one"></div>
+              <div class="cream-drop drop-two"></div>
+              <div class="cherry">🍒</div>
+            </div>
+            <div class="cream-piping">🍥</div>
+          </div>
+          <span class="step-number">03</span>
+          <h4>Cream & Decoration</h4>
+          <p>We add creamy layers and beautiful decorations.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="making-card final-card">
+          <div class="animation-area final-area">
+            <div class="sparkle sparkle-one">✨</div>
+            <div class="sparkle sparkle-two">⭐</div>
+            <div class="finished-cake">
+              <div class="cake-candle"></div>
+              <div class="cake-top">🍓</div>
+              <div class="cake-middle"></div>
+              <div class="cake-bottom"></div>
+            </div>
+            <div class="heart heart-one">💗</div>
+            <div class="heart heart-two">💕</div>
+          </div>
+          <span class="step-number">04</span>
+          <h4>Ready to Enjoy!</h4>
+          <p>Your delicious Cake Shake masterpiece is ready!</p>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#cakes" class="btn btn-cake mt-4 px-4 py-3">
+      Explore Our Cakes <span class="ms-2">🎂</span>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <h3>Cake <span>Shake</span> ♡</h3>
+    <p>Sweet moments, better prices.</p>
+    <p class="small mb-0">
+      © <span id="year"></span> Cake Shake | Nitish Patel Raebareli . All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a class="whatsapp-float"
+   href="javascript:void(0)"
+   (click)="openWhatsApp()"
+   aria-label="Chat on WhatsApp">
+
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+
+
