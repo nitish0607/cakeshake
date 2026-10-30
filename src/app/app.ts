@@ -1,19 +1,23 @@
+
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+
   protected readonly title = signal('cakeshakewala');
 
   readonly WHATSAPP_NUMBER = '917753035353';
   readonly currentYear = new Date().getFullYear();
 
+  // Order specific cake on WhatsApp
   orderCake(name: string, price: number, photoUrl: string): void {
+
     const message =
       `Hi Cake Shake! I want to order ${name} for ₹${price}.\n` +
       `Cake Photo: ${photoUrl}\n` +
@@ -25,14 +29,14 @@ export class App {
     window.open(url, '_blank');
   }
 
- 
+  // General WhatsApp chat
+  openWhatsApp(): void {
 
-openWhatsApp() {
-   var WHATSAPP_NUMBER = '917753035353';
-  window.open(
-    `https://wa.me/${this.WHATSAPP_NUMBER}`,
-    '_blank'
-  );
-}
+    window.open(
+      `https://wa.me/${this.WHATSAPP_NUMBER}`,
+      '_blank'
+    );
+
+  }
 
 }

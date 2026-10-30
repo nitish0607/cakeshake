@@ -1,13 +1,12 @@
 
-
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
-   <a class="navbar-brand brand" href="#home">
-  <span class="cake-icon">🎂</span>
-  Cake <span class="brand-highlight">Shake Wala</span>
-  <span class="heart">♡</span>
-</a>
+    <a class="navbar-brand brand" href="#home">
+      <span class="cake-icon">🎂</span>
+      Cake <span class="brand-highlight">Shake Wala</span>
+      <span class="heart">♡</span>
+    </a>
 
     <button class="navbar-toggler" type="button"
       data-bs-toggle="collapse" data-bs-target="#navbarMenu"
@@ -100,14 +99,10 @@
 
             <div class="price">₹399 <del>₹499</del></div>
 
-            
-
-<button class="btn btn-cake w-100 mt-3"
-  (click)="orderCake('Chocolate Truffle', 399, 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80')">
-  <i class="bi bi-whatsapp"></i> Order on WhatsApp
-</button>
-
-
+            <button class="btn btn-cake w-100 mt-3"
+              (click)="orderCake('Chocolate Truffle', 399, 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80')">
+              <i class="bi bi-whatsapp"></i> Order on WhatsApp
+            </button>
           </div>
         </div>
       </div>
@@ -125,10 +120,11 @@
             <p>Soft sponge with strawberry cream.</p>
 
             <div class="price">₹449 <del>₹549</del></div>
-<button class="btn btn-cake w-100 mt-3"
-  (click)="orderCake('Strawberry Cream', 449, 'https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=700&q=80')">
-  <i class="bi bi-whatsapp"></i> Order on WhatsApp
-</button>
+
+            <button class="btn btn-cake w-100 mt-3"
+              (click)="orderCake('Strawberry Cream', 449, 'https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=700&q=80')">
+              <i class="bi bi-whatsapp"></i> Order on WhatsApp
+            </button>
           </div>
         </div>
       </div>
@@ -148,9 +144,9 @@
             <div class="price">₹499 <del>₹599</del></div>
 
             <button class="btn btn-cake w-100 mt-3"
-  (click)="orderCake('Red Velvet', 499, 'https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=700&q=80')">
-  <i class="bi bi-whatsapp"></i> Order on WhatsApp
-</button>
+              (click)="orderCake('Red Velvet', 499, 'https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=700&q=80')">
+              <i class="bi bi-whatsapp"></i> Order on WhatsApp
+            </button>
           </div>
         </div>
       </div>
@@ -168,10 +164,9 @@
             <div class="price">₹449</div>
 
             <button class="btn btn-cake w-100 mt-3"
-  (click)="orderCake('Fresh Fruit Cake', 449, 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80')">
-  <i class="bi bi-whatsapp"></i> Order on WhatsApp
-</button>
-
+              (click)="orderCake('Fresh Fruit Cake', 449, 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80')">
+              <i class="bi bi-whatsapp"></i> Order on WhatsApp
+            </button>
           </div>
         </div>
       </div>
@@ -188,10 +183,10 @@
             <p>Classic vanilla with whipped cream.</p>
             <div class="price">₹349</div>
 
-<button class="btn btn-cake w-100 mt-3"
-  (click)="orderCake('Vanilla Delight', 349, 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=700&q=80')">
-  <i class="bi bi-whatsapp"></i> Order on WhatsApp
-</button>
+            <button class="btn btn-cake w-100 mt-3"
+              (click)="orderCake('Vanilla Delight', 349, 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=700&q=80')">
+              <i class="bi bi-whatsapp"></i> Order on WhatsApp
+            </button>
           </div>
         </div>
       </div>
@@ -208,15 +203,16 @@
             <p>Soft cupcakes with creamy frosting.</p>
             <div class="price">₹199</div>
 
-<button class="btn btn-cake w-100 mt-3"
-  (click)="orderCake('Cupcake Box', 199, 'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=700&q=80')">
-  <i class="bi bi-whatsapp"></i> Order on WhatsApp
-</button>
+            <button class="btn btn-cake w-100 mt-3"
+              (click)="orderCake('Cupcake Box', 199, 'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=700&q=80')">
+              <i class="bi bi-whatsapp"></i> Order on WhatsApp
+            </button>
           </div>
         </div>
       </div>
 
     </div>
+
     <p class="small text-center text-secondary mt-4">
       Prices are sample starting prices and may vary by size and design.
     </p>
@@ -263,16 +259,19 @@
     <h2>Let's Make Your Day Sweeter!</h2>
     <p>Choose your cake and message us to confirm your order.</p>
 
-    <a href="https://wa.me/"
-       target="_blank" rel="noopener"
-       class="btn btn-cake btn-lg">
-      <i class="bi bi-whatsapp" (click)="orderCake"></i> Chat on WhatsApp
-    </a>
+    <button
+      type="button"
+      class="btn btn-cake btn-lg"
+      (click)="openWhatsApp()">
+
+      <i class="bi bi-whatsapp"></i>
+      Chat on WhatsApp
+
+    </button>
   </div>
 </section>
 
-<!--Cake Formation-->
-
+<!-- Cake Formation -->
 <section class="cake-making-section py-5">
   <div class="container text-center">
     <span class="section-tag">MADE WITH LOVE</span>
@@ -374,7 +373,7 @@
     <h3>Cake <span>Shake</span> ♡</h3>
     <p>Sweet moments, better prices.</p>
     <p class="small mb-0">
-      © <span id="year"></span> Cake Shake | Nitish Patel Raebareli . All rights reserved.
+      © <span id="year"></span> Cake Shake | Nitish Patel Raebareli. All rights reserved.
     </p>
   </div>
 </footer>
@@ -387,6 +386,3 @@
 
   <i class="bi bi-whatsapp"></i>
 </a>
-
-
-
